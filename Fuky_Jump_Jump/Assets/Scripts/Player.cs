@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
         if (_grounded == true)
         {
             _playerAnimator.SetTrigger("jumpPlayer");
-            _rb2d.AddForce(new Vector2(0f, 350f));
+            _rb2d.AddForce(new Vector2(0f, 400f));
         }
     }
 
