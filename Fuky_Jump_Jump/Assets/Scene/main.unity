@@ -271,7 +271,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &150532124 stripped
+--- !u!224 &150532124
 RectTransform:
   m_PrefabParentObject: {fileID: 22471016, guid: e1fd2e240f3fe7440b066b1a0c5b4b45,
     type: 2}
@@ -390,7 +390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457516, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0199999996
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 457516, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
       propertyPath: m_LocalPosition.x
@@ -406,7 +406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 449458, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.64999998
+      value: 1.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 449458, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
       propertyPath: m_LocalPosition.x
@@ -423,6 +423,10 @@ Prefab:
     - target: {fileID: 175500, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
       propertyPath: m_TagString
       value: DeathArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 21201708, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
+      propertyPath: m_SortingOrder
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
@@ -511,7 +515,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1309368937 stripped
+--- !u!114 &1309368937
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11446598, guid: 44ecc7434d7e6994aa1e04b714d22f66,
     type: 2}
