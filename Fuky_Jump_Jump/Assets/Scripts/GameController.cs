@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameController : MonoSingleton<GameController> {
+public class GameController : MonoBehaviour {
 
     //
     public GameObject player;
     public GameObject playerPrefab;
     public Transform playerPosition;
     //
-    
+
+    public void Start()
+    {
+    }
 
     public void GameReStart()
     {
@@ -23,6 +26,7 @@ public class GameController : MonoSingleton<GameController> {
         {
             player = Instantiate(playerPrefab);
             player.transform.position = playerPosition.position;
+            player.transform.SetParent(playerPosition);
         }
         else
         {
@@ -48,4 +52,22 @@ public class GameController : MonoSingleton<GameController> {
         //Cong diem
         ScoreController.Instance.ShowScore(score);
     }
+
+    public void Jump()
+    {
+        if (player)
+            player.GetComponent<Player>().Jump();
+    }
+    public void JumpFar()
+    {
+        if (player)
+            player.GetComponent<Player>().JumpFar();
+    }
+
+    public void Down()
+    {
+        if (player)
+            player.GetComponent<Player>().Down();
+    }
+
 }
