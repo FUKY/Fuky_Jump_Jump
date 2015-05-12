@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: die
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: box3
+    classID: 1
+    script: {fileID: 0}
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: a5abd45f655350647b605689a41d8cac, type: 3}
+    - time: .200000003
+      value: {fileID: 21300000, guid: a8fa68127bea92b42abcf2ce7f8f0ba4, type: 3}
+    - time: .400000006
+      value: {fileID: 21300000, guid: 2ce8d6b21498a4d4cb5f7ea7dee4fbfc, type: 3}
+    - time: .600000024
+      value: {fileID: 21300000, guid: c89d1ca26b021a14f8a5ee4cd03334a5, type: 3}
+    - time: .800000012
+      value: {fileID: 21300000, guid: 82352060836f87543b839d0359e6a3d7, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: 71d53f4ff0c193e4b9bcf59f17850fc6, type: 3}
+    - time: 1.20000005
+      value: {fileID: 21300000, guid: 991f8c8af0196564c84a6716879392b3, type: 3}
+    - time: 1.39999998
+      value: {fileID: 21300000, guid: ae2f78f8a70012c47a58993983e522cc, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 5
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 2882993761
+      attribute: 2086281974
+      script: {fileID: 0}
+      classID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 0
+      script: {fileID: 0}
+      classID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: a5abd45f655350647b605689a41d8cac, type: 3}
+    - {fileID: 21300000, guid: a8fa68127bea92b42abcf2ce7f8f0ba4, type: 3}
+    - {fileID: 21300000, guid: 2ce8d6b21498a4d4cb5f7ea7dee4fbfc, type: 3}
+    - {fileID: 21300000, guid: c89d1ca26b021a14f8a5ee4cd03334a5, type: 3}
+    - {fileID: 21300000, guid: 82352060836f87543b839d0359e6a3d7, type: 3}
+    - {fileID: 21300000, guid: 71d53f4ff0c193e4b9bcf59f17850fc6, type: 3}
+    - {fileID: 21300000, guid: 991f8c8af0196564c84a6716879392b3, type: 3}
+    - {fileID: 21300000, guid: ae2f78f8a70012c47a58993983e522cc, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1.60000002
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IsActive
+    path: box3
+    classID: 1
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
