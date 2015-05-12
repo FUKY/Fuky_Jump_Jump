@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
     private Rigidbody2D _rb2d;
 
     private bool _grounded;
+    //private Collider2D[] _groundedList;
 
     public Transform groundCheck;
     public LayerMask layerGround;
@@ -20,6 +21,8 @@ public class Player : MonoBehaviour {
     void Update()
     {
         _grounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, layerGround);
+       // _groundedList=Physics2D.OverlapCircleAll(groundCheck.position,0.1f, layerGround);
+
     }
 
     public void Jump()
@@ -31,6 +34,7 @@ public class Player : MonoBehaviour {
         }
     }
 
+
     public void Down()
     {
         if (_grounded == true)
@@ -38,4 +42,29 @@ public class Player : MonoBehaviour {
             _playerAnimator.SetTrigger("downPlayer");
         }
     }
+
+    public void JumpFar()
+    {
+        if (_grounded == true)
+        {
+            _playerAnimator.SetTrigger("jumpPlayer");
+            _rb2d.AddForce(new Vector2(400f, 700f));
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "DeathArea") 
+        {
+            _rb2d.gravityScale = 0f;
+            _rb2d.velocity = Vector2.zero;
+            _playerAnimator.SetTrigger("diePlayer");
+        }
+    }
+
+    public void DestroyPlayer()
+    {
+        Destroy(gameObject);
+    }
+
 }

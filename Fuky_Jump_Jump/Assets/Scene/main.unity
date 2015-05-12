@@ -148,6 +148,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1607586207}
     m_Modifications:
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22471016, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -228,10 +232,30 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1309368937}
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1309368937}
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpFar
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481772, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1fd2e240f3fe7440b066b1a0c5b4b45, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &150532124 stripped
+--- !u!224 &150532124
 RectTransform:
   m_PrefabParentObject: {fileID: 22471016, guid: e1fd2e240f3fe7440b066b1a0c5b4b45,
     type: 2}
@@ -372,6 +396,18 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 14.0500002
       objectReference: {fileID: 0}
+    - target: {fileID: 173336, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
+      propertyPath: m_TagString
+      value: DeathArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107198, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 175500, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
+      propertyPath: m_TagString
+      value: DeathArea
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e0ddd428228a1449cbd31b25e75157, type: 2}
   m_IsPrefabParent: 0
@@ -459,7 +495,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1309368937 stripped
+--- !u!114 &1309368937
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11446598, guid: 44ecc7434d7e6994aa1e04b714d22f66,
     type: 2}
