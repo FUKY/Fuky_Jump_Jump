@@ -31,4 +31,11 @@ public class Player : MonoBehaviour {
         }
     }
 
+    public void Down()
+    {
+        if (_grounded == true)
+        {
+            _playerAnimator.SetTrigger("downPlayer");
+        }
+    }
 }
