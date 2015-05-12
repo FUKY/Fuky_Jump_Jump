@@ -24,8 +24,11 @@ public class Player : MonoBehaviour {
 
     public void Jump()
     {
-        _playerAnimator.SetTrigger("jumpPlayer");
-        _rb2d.velocity = new UnityEngine.Vector2(0f, 1f);
+        if (_grounded == true)
+        {
+            _playerAnimator.SetTrigger("jumpPlayer");
+            _rb2d.AddForce(new Vector2(0f, 350f));
+        }
     }
 
 }
